@@ -67,7 +67,7 @@ try:
 except:
 	print("[INFO] could not determine # of frames in video")
 	total = -1
-
+cv2.imshow("Color reference", cv2.imread('opencv-semantic-segmentation/reference.png'))
 # loop over frames from the video file stream
 while True:
 	# read the next frame from the file
@@ -131,6 +131,7 @@ while True:
 	# check to see if we should display the output frame to our screen
 	if args["show"] > 0:
 		cv2.imshow("Frame", output)
+		cv2.imshow("Original frame", frame)
 		key = cv2.waitKey(1) & 0xFF
  
 		# if the `q` key was pressed, break from the loop
