@@ -17,6 +17,10 @@ python faceRecognition/recognize.py --detector faceRecognition/face_detection_mo
 	--recognizer faceRecognition/output/recognizer.pickle \
 	--le faceRecognition/output/le.pickle
 
+To run facial landmarks
+
+python facialLandmarks/facial_landmarks.py --shape-predictor facialLandmarks/shape_predictor_68_face_landmarks.dat
+
 
 To run semantic segmentation:
 
