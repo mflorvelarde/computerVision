@@ -1,5 +1,8 @@
 # computerVision
 
+To run dnn
+python faceDetection/dnn.py --prototxt faceDetection/deploy.prototxt.txt --model faceDetection/model.caffemodel
+
 To run semantic segmentation:
 
 python opencv-semantic-segmentation/segment_video.py --model opencv-semantic-segmentation/enet-cityscapes/enet-model.net \
