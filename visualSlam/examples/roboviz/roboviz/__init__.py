@@ -28,7 +28,6 @@ import matplotlib.lines as mlines
 from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
 
-# This helps with Raspberry Pi
 import matplotlib
 matplotlib.use('TkAgg')
 

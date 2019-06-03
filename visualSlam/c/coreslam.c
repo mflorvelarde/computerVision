@@ -1,35 +1,6 @@
 /*
- * coreslam.c adapted from CoreSLAM.c, CoreSLAM_state.c, and CoreSLAM.h
- * downloaded from openslam.org on 01 January 2014.  Contains implementations
- * of scan and map methods.
- *
- * Copyright (C) 2014 Simon D. Levy
- *
- * This code is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Lesser General Public License as
- * published by the Free Software Foundation, either version 3 of the
- * License, or (at your option) any later version.
- *
- * This code is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU Lesser General Public License
- * along with this code.  If not, see <http:#www.gnu.org/licenses/>.
- *
- * Change log
- *
- * 07-FEB-2014 : Simon D. Levy  - Initial release
- * 01-MAR-2014 : SDL - Converted millimeters to meters for API
- * 21-JUN-2014 : SDL - Added support for SSE and NEON
- * 10-JUL-2014 : SDL - Changed Laser scan rate and angles from int to double
- * 21-JUL-2014 : SDL - Made RMHC position search avoid looping when max count is zero
- * 23-JUL-2014 : SDL - Simplified laser detection angle min, max to total angle
- * 07-SEP-2014 : SDL - Migrated to github
- */
-
-
+* Scan and map methods.
+*/
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>

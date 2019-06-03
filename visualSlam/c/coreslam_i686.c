@@ -1,35 +1,3 @@
-/*
-coreslam_i686.c Intel Streaming SIMD Extensions for CoreSLAM
-
-Based on
-
-@InProceedings{,
-    author={El Hamzaoui, O. and Steux, B.},
-    title={A fast scan matching for grid-based laser SLAM using streaming SIMD extensions},
-    booktitle={Control Automation Robotics Vision (ICARCV), 2010 11th International Conference on},
-    year={2010},
-    month={Dec},
-    pages={1986-1990}
-}
-
-Copyright (C) 2014 Simon D. Levy
-
-This code is free software: you can redistribute it and/or modify
-it under the terms of the GNU Lesser General Public License as 
-published by the Free Software Foundation, either version 3 of the 
-License, or (at your option) any later version.
-
-This code is distributed in the hope that it will be useful,     
-but WITHOUT ANY WARRANTY without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU Lesser General Public License 
-along with this code.  If not, see <http:#www.gnu.org/licenses/>.
-
-*/
-
-
 #ifdef _MSC_VER
 typedef __int64 int64_t;       /* Define it from MSVC's internal type */
 #else

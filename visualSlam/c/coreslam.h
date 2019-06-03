@@ -1,24 +1,6 @@
 /*
-
-coreslam.h adapted from CoreSLAM.h downloaded from openslam.org on 01 January 2014.  
 Contains efficient implementations of scan and map structures.
-
-Copyright (C) 2014 Simon D. Levy
-
-This code is free software: you can redistribute it and/or modify
-it under the terms of the GNU Lesser General Public License as 
-published by the Free Software Foundation, either version 3 of the 
-License, or (at your option) any later version.
-
-This code is distributed in the hope that it will be useful,     
-but WITHOUT ANY WARRANTY without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU Lesser General Public License 
-along with this code.  If not, see <http:#www.gnu.org/licenses/>.
 */
-
 /* Default parameters --------------------------------------------------------*/
 
 static const int    DEFAULT_MAP_QUALITY         = 50; /* out of 255 */

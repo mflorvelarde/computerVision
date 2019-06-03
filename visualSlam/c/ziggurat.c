@@ -1,26 +1,3 @@
-/*
-ziggurat.c Ziggurat random-number generator
-
-Downloaded from 
-
-  http://people.sc.fsu.edu/~jburkardt/c_src/ziggurat/ziggurat.c
-
-on 20 July 2014.
-
-This code is free software: you can redistribute it and/or modify
-it under the terms of the GNU Lesser General Public License as 
-published by the Free Software Foundation, either version 3 of the 
-License, or (at your option) any later version.
-
-This code is distributed in the hope that it will be useful,     
-but WITHOUT ANY WARRANTY without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU Lesser General Public License 
-along with this code.  If not, see <http:#www.gnu.org/licenses/>.
-*/
-
 # include <stdlib.h>
 # include <stdio.h>
 # include <math.h>
@@ -39,28 +16,9 @@ uint32_t cong_seeded ( uint32_t *jcong )
 
     CONG_SEEDED evaluates the CONG congruential random number generator.
 
-  Licensing:
-
-    This code is distributed under the GNU LGPL license. 
-
-  Modified:
-
-    16 October 2013
-
-  Author:
-
-    John Burkardt
-
-  Reference:
-
-    George Marsaglia, Wai Wan Tsang,
-    The Ziggurat Method for Generating Random Variables,
-    Journal of Statistical Software,
-    Volume 5, Number 8, October 2000, seven pages.
-
   Parameters:
 
-    Input/output, uint32_t *JCONG, the seed, which is updated 
+    Input/output, uint32_t *JCONG, the seed, which is updated
     on each call.
 
     Output, uint32_t CONG_SEEDED, the new value.
@@ -84,18 +42,6 @@ double cpu_time ( )
 
     CPU_TIME returns the current reading on the CPU clock.
 
-  Licensing:
-
-    This code is distributed under the GNU LGPL license. 
-
-  Modified:
-
-    08 December 2008
-
-  Author:
-
-    John Burkardt
-
   Parameters:
 
     Output, double CPU_TIME, the current reading of the CPU clock, in seconds.
@@ -116,18 +62,6 @@ uint32_t kiss_seeded ( uint32_t *jcong, uint32_t *jsr, uint32_t *w, uint32_t *z 
   Purpose:
 
     KISS_SEEDED evaluates the KISS random number generator.
-
-  Licensing:
-
-    This code is distributed under the GNU LGPL license. 
-
-  Modified:
-
-    15 October 2013
-
-  Author:
-
-    John Burkardt
 
   Reference:
 
@@ -160,25 +94,6 @@ uint32_t mwc_seeded ( uint32_t *w, uint32_t *z )
 
     MWC_SEEDED evaluates the MWC multiply-with-carry random number generator.
 
-  Licensing:
-
-    This code is distributed under the GNU LGPL license. 
-
-  Modified:
-
-    15 October 2013
-
-  Author:
-
-    John Burkardt
-
-  Reference:
-
-    George Marsaglia, Wai Wan Tsang,
-    The Ziggurat Method for Generating Random Variables,
-    Journal of Statistical Software,
-    Volume 5, Number 8, October 2000, seven pages.
-
   Parameters:
 
     Input/output, uint32_t *W, uint32_t *Z, the seeds, which are updated 
@@ -205,32 +120,6 @@ float r4_exp ( uint32_t *jsr, uint32_t ke[256], float fe[256], float we[256] )
   Purpose:
 
     R4_EXP returns an exponentially distributed single precision real value.
-
-  Discussion:
-
-    The underlying algorithm is the ziggurat method.
-
-    Before the first call to this function, the user must call R4_EXP_SETUP
-    to determine the values of KE, FE and WE.
-
-  Licensing:
-
-    This code is distributed under the GNU LGPL license. 
-
-  Modified:
-
-    15 October 2013
-
-  Author:
-
-    John Burkardt
-
-  Reference:
-
-    George Marsaglia, Wai Wan Tsang,
-    The Ziggurat Method for Generating Random Variables,
-    Journal of Statistical Software,
-    Volume 5, Number 8, October 2000, seven pages.
 
   Parameters:
 
@@ -295,25 +184,6 @@ void r4_exp_setup ( uint32_t ke[256], float fe[256], float we[256] )
 
     R4_EXP_SETUP sets data needed by R4_EXP.
 
-  Licensing:
-
-    This code is distributed under the GNU LGPL license. 
-
-  Modified:
-
-    14 October 2013
-
-  Author:
-
-    John Burkardt
-
-  Reference:
-
-    George Marsaglia, Wai Wan Tsang,
-    The Ziggurat Method for Generating Random Variables,
-    Journal of Statistical Software,
-    Volume 5, Number 8, October 2000, seven pages.
-
   Parameters:
 
     Output, uint32_t KE[256], data needed by R4_EXP.
@@ -368,25 +238,6 @@ float r4_nor ( uint32_t *jsr, uint32_t kn[128], float fn[128], float wn[128] )
 
     Before the first call to this function, the user must call R4_NOR_SETUP
     to determine the values of KN, FN and WN.
-
-  Licensing:
-
-    This code is distributed under the GNU LGPL license. 
-
-  Modified:
-
-    14 October 2013
-
-  Author:
-
-    John Burkardt
-
-  Reference:
-
-    George Marsaglia, Wai Wan Tsang,
-    The Ziggurat Method for Generating Random Variables,
-    Journal of Statistical Software,
-    Volume 5, Number 8, October 2000, seven pages.
 
   Parameters:
 
@@ -472,25 +323,6 @@ void r4_nor_setup ( uint32_t kn[128], float fn[128], float wn[128] )
 
     R4_NOR_SETUP sets data needed by R4_NOR.
 
-  Licensing:
-
-    This code is distributed under the GNU LGPL license. 
-
-  Modified:
-
-    14 October 2013
-
-  Author:
-
-    John Burkardt
-
-  Reference:
-
-    George Marsaglia, Wai Wan Tsang,
-    The Ziggurat Method for Generating Random Variables,
-    Journal of Statistical Software,
-    Volume 5, Number 8, October 2000, seven pages.
-
   Parameters:
 
     Output, uint32_t KN[128], data needed by R4_NOR.
@@ -537,25 +369,6 @@ float r4_uni ( uint32_t *jsr )
 
     R4_UNI returns a uniformly distributed real value.
 
-  Licensing:
-
-    This code is distributed under the GNU LGPL license. 
-
-  Modified:
-
-    04 October 2013
-
-  Author:
-
-    John Burkardt
-
-  Reference:
-
-    George Marsaglia, Wai Wan Tsang,
-    The Ziggurat Method for Generating Random Variables,
-    Journal of Statistical Software,
-    Volume 5, Number 8, October 2000, seven pages.
-
   Parameters:
 
     Input/output, uint32_t *JSR, the seed.
@@ -594,25 +407,6 @@ uint32_t shr3_seeded ( uint32_t *jsr )
     use the uint32_t data type in order to execute properly in 64 bit mode,
     03 October 2013.
 
-  Licensing:
-
-    This code is distributed under the GNU LGPL license. 
-
-  Modified:
-
-    04 October 2013
-
-  Author:
-
-    John Burkardt
-
-  Reference:
-
-    George Marsaglia, Wai Wan Tsang,
-    The Ziggurat Method for Generating Random Variables,
-    Journal of Statistical Software,
-    Volume 5, Number 8, October 2000, seven pages.
-
   Parameters:
 
     Input/output, uint32_t *JSR, the seed, which is updated 
@@ -642,26 +436,6 @@ void timestamp ( )
   Purpose:
 
     TIMESTAMP prints the current YMDHMS date as a time stamp.
-
-  Example:
-
-    31 May 2001 09:45:54 AM
-
-  Licensing:
-
-    This code is distributed under the GNU LGPL license. 
-
-  Modified:
-
-    24 September 2003
-
-  Author:
-
-    John Burkardt
-
-  Parameters:
-
-    None
 */
 {
 # define TIME_SIZE 40
