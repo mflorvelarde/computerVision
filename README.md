@@ -36,3 +36,9 @@ python opencv-semantic-segmentation/segment_video.py --model opencv-semantic-seg
 	--colors opencv-semantic-segmentation/enet-cityscapes/enet-colors.txt \
 	--video opencv-semantic-segmentation/videos/pana.mp4 \
 	--output opencv-semantic-segmentation/output/austral_output.avi
+
+
+
+To detect license plates
+
+python Extraction.py --image
